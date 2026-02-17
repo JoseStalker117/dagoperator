@@ -1,0 +1,47 @@
+# /utils/providers/proveedor_a.yaml
+
+provider: proveedor_a
+format: csv
+version: 1.0
+
+file:
+  encoding: utf-8
+  newline: unix       # unix | windows
+  delimiter: ","
+  margin: false       # espacios entre delimitadores
+  quotechar: '"'
+
+structure:
+  header: true
+  skip_rows: 0
+
+columns:
+  - name: id
+    type: int
+    required: true
+    max_length: 10
+
+  - name: nombre
+    type: string
+    required: true
+    max_length: 50
+
+  - name: edad
+    type: int
+    required: true
+    max_length: 3
+
+  - name: salario
+    type: float
+    required: true
+    max_decimals: 2
+    max_length: 12
+
+  - name: fecha_nacimiento
+    type: date
+    required: true
+    format: "%Y-%m-%d"
+
+  - name: fecha_pago
+    type: date
+    format: "%d/%m/%Y"

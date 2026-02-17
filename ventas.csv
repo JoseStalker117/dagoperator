@@ -1,0 +1,6 @@
+id,nombre,fecha,monto,estado
+1,Juan Pérez,2024-01-15,1500.50,activo
+2,María García,2024-01-16,2300.00,inactivo
+3,Carlos López,2024-01-17,875.25,activo
+4,Ana Martínez,2024-01-18,4100.75,pendiente
+5,Luis Rodríguez,2024-01-19,620.00,activo
